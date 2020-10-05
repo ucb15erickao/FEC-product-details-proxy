@@ -1,1 +1,1 @@
-# FEC-product-details-proxy
+# FEC-proxy
