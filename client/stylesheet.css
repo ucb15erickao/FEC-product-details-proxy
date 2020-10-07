@@ -1,3 +1,56 @@
+html {
+  box-sizing: border-box;
+  border: 0;
+  font-family: 'Cera Pro Medium';
+}
+
+body {
+  box-sizing: inherit;
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+  vertical-align: top;
+  background: blue;
+  justify-content: center;
+}
+
 .container {
-  background: black;
+  width: fit-content;
+  margin: 0;
+  justify-content: center;
+}
+
+.product-container {
+  background: rgb(248, 248, 248);
+  display: flex;
+  position: relative;
+  width: auto;
+  justify-content: space-evenly;
+  padding: 32px 0;
+}
+
+#gallery {
+  display: inline-block;
+  width: fit-content;
+}
+
+#details {
+  display: inline-block;
+  width: fit-content;
+}
+
+.reviews-container {
+  background: rgb(248, 248, 248);
+  display: block;
+}
+
+#reviews {
+  border-top: 1px solid rgb(224, 224, 224);
+}
+
+#recommendations {
+  background: rgb(248, 248, 248);
+  border-top: 1px solid rgb(224, 224, 224);
+  padding-bottom: 50px;
 }
