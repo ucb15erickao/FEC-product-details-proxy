@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: fit-content;
+  width: 88vw;
   margin: 0;
   justify-content: center;
 }
@@ -24,6 +24,8 @@ body {
 .product-container {
   background: rgb(248, 248, 248);
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
   width: auto;
   justify-content: space-evenly;
@@ -31,12 +33,12 @@ body {
 }
 
 #gallery {
-  display: inline-block;
+  display: inline-flex;
   width: fit-content;
 }
 
 #details {
-  display: inline-block;
+  display: inline-flex;
   width: fit-content;
 }
 
