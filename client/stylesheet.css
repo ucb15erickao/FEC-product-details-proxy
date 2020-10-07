@@ -16,6 +16,7 @@ body {
 }
 
 .product-wrapper {
+  background: rgb(248, 248, 248);
   width: 100vw;
   left: 0;
   display: flex;
@@ -31,6 +32,7 @@ body {
   position: relative;
   width: auto;
   justify-content: space-between;
+  padding: 32px 0;
 }
 
 #gallery {
@@ -41,7 +43,6 @@ body {
 #details {
   display: inline-flex;
   width: fit-content;
-  margin-right: 2%;
 }
 
 .reviews-container {
@@ -54,15 +55,16 @@ body {
 }
 
 #reviews {
-  width: 90vw;
   max-width: 82.5rem;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .recommendations-container {
   width: 100vw;
   left: 0;
   border-top: 1px solid rgb(224, 224, 224);
+  background: rgb(248, 248, 248);
   display: flex;
   justify-content: center;
 }
