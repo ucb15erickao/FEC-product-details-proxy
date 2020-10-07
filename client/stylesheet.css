@@ -15,44 +15,61 @@ body {
   justify-content: center;
 }
 
-.container {
-  width: 88vw;
-  margin: 0;
+.product-wrapper {
+  width: 100vw;
+  left: 0;
+  display: flex;
   justify-content: center;
 }
 
 .product-container {
+  max-width: 82.5rem;
   background: rgb(248, 248, 248);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
   width: auto;
-  justify-content: space-evenly;
-  padding: 32px 0;
+  justify-content: space-between;
 }
 
 #gallery {
   display: inline-flex;
-  width: fit-content;
+  width: auto;
 }
 
 #details {
   display: inline-flex;
   width: fit-content;
+  margin-right: 2%;
 }
 
 .reviews-container {
+  width: 100vw;
+  left: 0;
+  border-top: 1px solid rgb(224, 224, 224);
   background: rgb(248, 248, 248);
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 #reviews {
+  width: 90vw;
+  max-width: 82.5rem;
+  justify-content: space-around;
+}
+
+.recommendations-container {
+  width: 100vw;
+  left: 0;
   border-top: 1px solid rgb(224, 224, 224);
+  display: flex;
+  justify-content: center;
 }
 
 #recommendations {
+  max-width: 82.5rem;
   background: rgb(248, 248, 248);
-  border-top: 1px solid rgb(224, 224, 224);
   padding-bottom: 50px;
+  justify-content: space-around;
 }
