@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   border: 0;
-  font-family: 'Cera Pro Medium';
 }
 
 body {
@@ -15,7 +14,7 @@ body {
   justify-content: center;
 }
 
-.product-wrapper {
+.product-container {
   background: rgb(248, 248, 248);
   width: 100vw;
   left: 0;
@@ -23,7 +22,7 @@ body {
   justify-content: center;
 }
 
-.product-container {
+.product-wrapper {
   max-width: 82.5rem;
   background: rgb(248, 248, 248);
   display: flex;
