@@ -1,47 +1,77 @@
 html {
   box-sizing: border-box;
   border: 0;
+  min-height: 100%;
+  height: 100%;
 }
 
 body {
   box-sizing: inherit;
-  width: fit-content;
-  height: auto;
+  display: block;
+  width: 100%;
   margin: 0 auto;
   border: 0;
-  vertical-align: top;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
   background: blue;
+  color: #2c2c2c;
   justify-content: center;
+}
+
+.product-wrapper1 {
+  display: block;
+}
+
+.product-wrapper2 {
+  display: block;
+  max-width: 82.5rem;
+  background: rgb(248, 248, 248);
+  padding: 1.5625rem 0.75rem;
+  margin: 0px auto;
 }
 
 .product-container {
   background: rgb(248, 248, 248);
-  width: 100vw;
-  left: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 0;
 }
 
-.product-wrapper {
-  max-width: 82.5rem;
-  background: rgb(248, 248, 248);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  position: relative;
-  width: auto;
-  justify-content: space-between;
-  padding: 32px 0;
+@media screen and (min-width: 901px) {
+  .product-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 #gallery {
-  display: inline-flex;
-  width: auto;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+  #gallery {
+    width: auto;
+    max-width: 70%;
+    flex: 1 1 70%;
+    position: relative;
+    padding-right: 1.125rem;
+  }
 }
 
 #details {
-  display: inline-flex;
-  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 901px) {
+  #details {
+      flex: 0 0 30%;
+  }
 }
 
 .reviews-container {
