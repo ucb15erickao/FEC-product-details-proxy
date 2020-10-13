@@ -16,7 +16,7 @@ server.get('/:pid/getGalleries', (req, res) => {
 });
 
 server.get('/:pid/product-details', (req, res) => {
-    axios.get(`http://ec2-54-241-133-117.us-west-1.compute.amazonaws.com/${req.params.pid}/product-details`)
+    axios.get(`http://ec2-13-56-11-125.us-west-1.compute.amazonaws.com/${req.params.pid}/product-details`)
     .then((details) => {
       res.status(200).send(details.data)
     })
@@ -27,7 +27,7 @@ server.get('/:pid/product-details', (req, res) => {
 });
 
 server.get('/:pid/reviews', (req, res) => {
-  axios.get(`http://ec2-3-101-21-222.us-west-1.compute.amazonaws.com/${req.params.pid}/reviews`)
+  axios.get(`http://ec2-13-57-226-242.us-west-1.compute.amazonaws.com/${req.params.pid}/reviews`)
     .then((reviewData) => {
       res.status(200).send(reviewData.data)
     })
@@ -38,7 +38,7 @@ server.get('/:pid/reviews', (req, res) => {
 });
 
 server.put('/:pid/reviews/vote/:voteType/:id/:toggle', (req, res) => {
-  axios.put(`http://ec2-3-101-21-222.us-west-1.compute.amazonaws.com/${req.params.pid}/reviews/vote/:voteType/:id/:toggle`)
+  axios.put(`http://ec2-13-57-226-242.us-west-1.compute.amazonaws.com/${req.params.pid}/reviews/vote/:voteType/:id/:toggle`)
     .then((reviewVote) => {
       res.status(200).send(reviewVote.data)
     })
